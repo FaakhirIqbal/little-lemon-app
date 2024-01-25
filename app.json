@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "final-assignment",  // The name of your app as it appears on the home screen.
+    "slug": "final-assignment",  // The URL slug for publishing your app. Should be unique.
+    "version": "1.0.0",  // The version of your app.
+    "orientation": "portrait",  // Locked orientation of your app; can be 'portrait', 'landscape', or 'default'.
+    "icon": "./assets/icon.png",  // Local path to your app's icon image.
+    "userInterfaceStyle": "light",  // Default theme for the app; can be 'light', 'dark', or 'automatic'.
+    "splash": {  // Configuration for the splash screen (initial loading screen).
+      "image": "./assets/splash.png",  // Local path to your splash screen image.
+      "resizeMode": "contain",  // Resizing mode for the splash image; can be 'cover' or 'contain'.
+      "backgroundColor": "#ffffff"  // Background color of the splash screen.
+    },
+    "assetBundlePatterns": [  // Glob patterns for assets to include in OTA updates.
+      "**/*"
+    ],
+    "ios": {  // Specific configurations for iOS.
+      "supportsTablet": true  // Boolean indicating whether your app supports iPad.
+    },
+    "android": {  // Specific configurations for Android.
+      "adaptiveIcon": {  // Configuration for adaptive icons on Android 8.0 and above.
+        "foregroundImage": "./assets/adaptive-icon.png",  // Foreground image of the adaptive icon.
+        "backgroundColor": "#ffffff"  // Background color for the adaptive icon.
+      }
+    },
+    "web": {  // Specific configurations for web.
+      "favicon": "./assets/favicon.png"  // Local path to your favicon image.
+    }
+  }
+}
